@@ -9,15 +9,26 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
+  
+  <!--The div for the whole side menu-->
   <div id="sideMenu" class="sideNav">
       <div class="overlay-content">
-        <a href="javascript:void(0)" onclick="closeNav()" class="material-symbols-rounded md-close">close</a>
+
+        <!--What does the javascript:void(0) do? Onlclick basically hide the side nav-->
+        <a href="javascript:void(0)" onclick="closeNav('sideMenu')" class="material-symbols-rounded md-close">close</a>
+        
+        <!--Theses are the options inside the side nav that you can go to-->
         <a href="#"> <span class="material-symbols-rounded">home</span>  Home</a>
         <a href="#"><span class="material-symbols-rounded">settings</span>  Settings</a>
         <a href="#"><span class="material-symbols-rounded">shuffle</span>  Random</a>
+
+        <!--This will be when we have different color schemes???-->
         <a id="changeColor" href="#"><span class="material-symbols-rounded md-color">check_box_outline_blank</span>Account Color</a>
         <hr />
+        <!--A way for them to contact us-->
         <a id="mail" href="#"><span class="material-symbols-rounded">mail</span>  Contact Us</a>
+        
+        <!--A dropdown menu for choosing a different language-->
         <div class="dropdown">
           <button onclick="myFunction()" class="dropbtn">  English<span class="material-symbols-rounded">expand_more</span></button>
           <div id="myDropdown" class="dropdown-content">
@@ -29,11 +40,36 @@
       </div>
     </div>
   
+
+
+<div id="userMenu" class="userNav">
+
+  <!--FILL THIS IN WITH THE USER MENU LINKS-->
+  <div class="overlay-content">
+
+    <!--What does the javascript:void(0) do? Onlclick basically hide the side nav-->
+    <a href="javascript:void(0)" onclick="closeNav('userMenu')" class="material-symbols-rounded md-close">close</a>
+    
+    <!--Theses are the options inside the side nav that you can go to-->
+    <a href="#"> <span class="material-symbols-rounded">home</span>  Home</a>
+    <a href="#"><span class="material-symbols-rounded">settings</span>  User Settings</a>
+    <a href="#"><span class="material-symbols-rounded md-profile">person</span>  Profile Settings</a>
+
+    <!--Change this to a better icon-->
+    <a href="#"><span class="material-symbols-rounded md-profile">person</span>  Log Out</a>
+  </div>
+</div>
+  <!--This is the top menu-->
   <div class="top">
-    <p id="menu" class="material-symbols-rounded md-40">menu</p>
+    <!--The burger symbol-->
+    <p id="menu" onclick="openNav('sideMenu')" class="material-symbols-rounded md-40">menu</p>
+
+    <!--The rest are self explanatory-->
     <p class="gameName">Game Name</p>
     <p id="#money">$0</p>
-    <p id="profile" class="material-symbols-rounded md-profile">person</p>
+
+    <!--The profile symbol-->
+    <p id="profile" onclick="openNav('userMenu')" class="material-symbols-rounded md-profile">person</p>
   </div>
   <hr />
 </body>
