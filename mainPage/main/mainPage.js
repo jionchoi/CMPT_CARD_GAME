@@ -17,3 +17,24 @@ function myFunction() {
       }
     }
   }
+
+
+  //A general function to open a sidebar, the parameter is an id name
+  function openNav(idName){
+    element = document.getElementById(idName).style; 
+    element.transition = "0.5s"; 
+    element.width = "250px"; 
+    element.padding = "20px"
+
+
+
+  }
+
+   //A general function to close a sidebar, the parameter is an id name
+  function closeNav(idName){
+    element = document.getElementById(idName).style; 
+    element.width = "0";
+    element.transition = "0s";
+    element.padding = "0px";
+    element.transition = "0.5s"
+  }
