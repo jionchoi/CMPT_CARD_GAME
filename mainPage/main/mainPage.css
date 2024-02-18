@@ -7,6 +7,11 @@
   'opsz' 24
 }
 
+body {
+    background-color: midnightblue;
+    color: lightblue;
+}
+
 .material-symbols-outlined.md-color {
     border-color: lightblue;
 }
@@ -145,4 +150,8 @@ display: block;
 #profile{
     padding-left: 14%;
     font-size: 55px;
+}
+
+hr {
+    border-color: lightblue;
 }
