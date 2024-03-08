@@ -1,1 +1,157 @@
 
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+body {
+    background-color: midnightblue;
+    color: lightblue;
+}
+
+.material-symbols-outlined.md-color {
+    border-color: lightblue;
+}
+
+
+.sideNav{
+    position: fixed;
+    width: 0px;
+    z-index: 1;
+    margin-top: 30px;
+    overflow-x: hidden;
+    background-color: #3498DB;
+    left:0;
+    height: 100%;
+    
+}
+
+.userNav{
+    position: fixed;
+    width: 0px;
+    z-index: 1;
+    margin-top: 30px;
+    overflow-x: hidden;
+    background-color: #3498DB;
+    right:0;
+    height: 100%;
+    
+}
+
+
+#close{
+    font-size: 50px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 30px;
+    display: block;
+    padding-top: 2rem; 
+}
+
+.overlay-content{
+    position: relative;
+    text-align: left;
+}
+
+#changeColor{
+    font-size: 30px;
+    padding-bottom: 1rem;
+}
+
+#mail{
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display:block;
+
+}
+
+.top{
+    display: flex;
+    margin-top: -50px;
+    font-size: 50px;
+    margin-bottom: -50px;
+}
+
+.top > p{
+    float: left;
+    cursor: pointer;
+}
+
+#menu{
+    padding-top: 0;
+    font-size: 50px;
+    padding-right: 40%;
+}
+
+.gameName{
+    font-size: 50px;
+    padding-right: 20%;
+}
+
+#money_symbol{
+    font-size: 55px;
+    padding: 10px;
+}
+
+#money{
+    font-size: 55px;
+}
+
+#profile{
+    padding-left: 14%;
+    font-size: 55px;
+}
+
+hr {
+    border-color: lightblue;
+}

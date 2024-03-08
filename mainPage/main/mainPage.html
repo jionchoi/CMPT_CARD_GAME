@@ -3,10 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <title>Main Page</title>
+    <link rel="stylesheet" href="mainPage.css">
+    <!-- Google Icon Library -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
+  
+  <!--The div for the whole side menu-->
+  <div id="sideMenu" class="sideNav">
+      <div class="overlay-content">
+
+        <!--What does the javascript:void(0) do? Onlclick basically hide the side nav-->
+        <a href="javascript:void(0)" onclick="closeNav('sideMenu')" class="material-symbols-rounded md-close">close</a>
+        
+        <!--Theses are the options inside the side nav that you can go to-->
+        <a href="#"> <span class="material-symbols-rounded">home</span>  Home</a>
+        <a href="#"><span class="material-symbols-rounded">settings</span>  Settings</a>
+        <a href="#"><span class="material-symbols-rounded">shuffle</span>  Random</a>
+
+        <!--This will be when we have different color schemes???-->
+        <a id="changeColor" href="#"><span class="material-symbols-rounded md-color">check_box_outline_blank</span>Account Color</a>
+        <hr />
+        <!--A way for them to contact us-->
+        <a id="mail" href="#"><span class="material-symbols-rounded">mail</span>  Contact Us</a>
+        
+        <!--A dropdown menu for choosing a different language-->
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">  English<span class="material-symbols-rounded">expand_more</span></button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#">English</a>
+            <a href="#">Link 2</a>  
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+
+<div id="userMenu" class="userNav">
+
+  <!--FILL THIS IN WITH THE USER MENU LINKS-->
+  <div class="overlay-content">
+
+    <!--What does the javascript:void(0) do? Onlclick basically hide the side nav-->
+    <a href="javascript:void(0)" onclick="closeNav('userMenu')" class="material-symbols-rounded md-close">close</a>
     
+    <!--Theses are the options inside the side nav that you can go to-->
+    <a href="#"> <span class="material-symbols-rounded">home</span>  Home</a>
+    <a href="#"><span class="material-symbols-rounded">settings</span>  User Settings</a>
+    <a href="#"><span class="material-symbols-rounded md-profile">person</span>  Profile Settings</a>
+
+    <!--Change this to a better icon-->
+    <a href="#"><span class="material-symbols-rounded md-profile">person</span>  Log Out</a>
+  </div>
+</div>
+  <!--This is the top menu-->
+  <div class="top">
+    <!--The burger symbol-->
+    <p id="menu" onclick="openNav('sideMenu')" class="material-symbols-rounded md-40">menu</p>
+
+    <!--The rest are self explanatory-->
+    <p class="gameName">Game Name</p>
+    <p id="#money">$0</p>
+
+    <!--The profile symbol-->
+    <p id="profile" onclick="openNav('userMenu')" class="material-symbols-rounded md-profile">person</p>
+  </div>
+  <hr />
 </body>
     <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>   
     <script src="mainPage.js"></script> 
