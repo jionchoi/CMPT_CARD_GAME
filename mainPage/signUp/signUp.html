@@ -1,13 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <!-- Meta tags describing overall content and description -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "keywords" content = "Sign up page" />
+    <meta name = "description" content = "A page to create an account." />
+    <meta name = "author" content = "Caleb Brost, Micah Dawkins" />
+    <meta http-equiv = "Content-Type" content = "text/html; charset = UTF-8" />
+
+    <!-- <link rel="stylesheet" href="../logIn/logIn.css"> -->
+
     <title>Sign Up</title>
 </head>
 <body>
-    
-</body>
+    <!-- Main content box -->
+    <div id="main-content">
+
+        <!-- Title -->
+        <div id="title-div">
+            <h1>Sign Up</h1>
+        </div>
+
+        <!-- Subtitle -->
+        <div id="subtitle-div">
+            <h3>Create an Account</h3>
+        </div>
+
+        <!-- Form container-->
+        <div id="form-container">
+            <!-- Username form -->
+            <form id="username-form">
+                <!-- The "for" attribute should be the same as the id of the <input> tag -->
+                <label for="username-input"></label>
+                <input type="text" id="username-input" placeholder="Username..." name="username"><br>
+            </form>
+
+            <!-- Email form -->
+            <form id="email-form">
+                <!-- The "for" attribute should be the same as the id of the <input> tag -->
+                <label for="email-input"></label>
+                <input type="email" id="email-input" placeholder="Email..." name="email"><br>
+            </form>
+
+            <!-- Password form -->
+            </form id="password-form">
+                <label for="password-input"></label>
+                <input type="text" id="password-input" placeholder="Password..." name="password"/>
+                <input type="text" id="re-entered-password-input" placeholder="Re-enter Password..." name="re-entered-password"/>
+              </form>
+
+        </div>
+
+        <!-- Submit button for logging in -->
+        <div id="button-container">
+            <button type="submit">Create Account</button>
+        </div>
+
+        <!-- Bottom paragragh with link to sign up page-->
+        <div id="bottom-container">
+            <p id="bottom-para">Already have an account? <a href="../mainPage/logIn/logIn.html" title="Go to the sign up page">Login here</a></p>
+        </div>
+
+    </div>
+    <!-- A modern HTML best practice is to place the script tag at the bottom of the document instead -->
     <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>   
-    <script src="signUp.js"></script> 
+    <script src="logIn.js"></script> 
+</body>
 </html>
+
