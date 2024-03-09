@@ -28,24 +28,20 @@
         <!-- Form container-->
         <div id="form-container">
             <!-- Username form -->
-            <form id="username-form">
+            <form action="/mainPage/main/mainPage.html" method="post" id="username-form">
                 <!-- The "for" attribute should be the same as the id of the <input> tag -->
                 <label for="username-input"></label>
                 <input type="text" id="username-input" placeholder="Username..." name="username"><br>
-            </form>
-
-            <!-- Password form -->
-            </form id="password-form">
+        
+                <!-- Password -->
                 <label for="password-input"></label>
                 <input type="text" id="password-input" placeholder="Password..." name="password"/>
-              </form>
+             
+              <button type="submit" id="logInButton">Login</button>
+            </form>
 
         </div>
 
-        <!-- Submit button for logging in -->
-        <div id="button-container">
-            <button type="submit">Login</button>
-        </div>
 
         <!-- Bottom paragragh with link to sign up page -->
         <div id="bottom-container">
@@ -56,5 +52,6 @@
     <!-- A modern HTML best practice is to place the script tag at the bottom of the document instead -->
     <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>   
     <script src="logIn.js"></script> 
+    <script src="/mainPage/server.js"></script>
 </body>
 </html>

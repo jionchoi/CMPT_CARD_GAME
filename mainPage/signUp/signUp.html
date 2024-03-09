@@ -34,42 +34,37 @@
         <!-- Form container-->
         <div id="form-container">
             <!-- Username form -->
-            <form id="username-form">
+            <form action="/signUp" method="post" id="username-form">
+                
+                <!-- Username Input-->
                 <!-- The "for" attribute should be the same as the id of the <input> tag -->
                 <label for="username-input"></label>
                 <input type="text" id="username-input" placeholder="Username..." name="username"><br>
-            </form>
-
-            <!-- Email form -->
-            <form id="email-form">
+     
+                <!-- Email Input-->
                 <!-- The "for" attribute should be the same as the id of the <input> tag -->
                 <label for="email-input"></label>
                 <input type="email" id="email-input" placeholder="Email..." name="email"><br>
-            </form>
-
-            <!-- Password form -->
-            </form id="password-form">
+                
+                <!-- Password Input-->
                 <label for="password-input"></label>
                 <input type="text" id="password-input" placeholder="Password..." name="password"/>
                 <input type="text" id="re-entered-password-input" placeholder="Re-enter Password..." name="re-entered-password"/>
-              </form>
 
-        </div>
-
-        <!-- Submit button for logging in -->
-        <div id="button-container">
-            <button type="submit">Create Account</button>
+                <button type="submit">Create Account</button>
+            </form>
         </div>
 
         <!-- Bottom paragragh with link to sign up page-->
         <div id="bottom-container">
-            <p id="bottom-para">Already have an account? <a href="../mainPage/logIn/logIn.html" title="Go to the sign up page">Login here</a></p>
+            <p id="bottom-para">Already have an account? <a href="/mainPage/logIn/logIn.html" title="Go to the sign up page">Login here</a></p>
         </div>
 
     </div>
     <!-- A modern HTML best practice is to place the script tag at the bottom of the document instead -->
     <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>   
     <script src="logIn.js"></script> 
+    <script src="/mainPage/server.js"></script>
 </body>
 </html>
 
